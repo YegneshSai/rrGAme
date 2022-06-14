@@ -1,0 +1,59 @@
+body{
+    background-color: yellow;
+}
+.left-area{
+    width:24%;
+}
+.right-area{
+    width:24%;
+    
+}
+.middle-area{
+    width:50%;
+}
+.content{
+    border: 3px solid black;
+    margin-top: 10%;
+    height: 30rem;
+    position: relative;
+    background-color: white;
+    
+}
+#box_area {
+    width: 100%;
+    
+    position: absolute;
+    
+    animation-duration:10s;
+    animation-name:slidein;
+    
+}
+
+#box_area p{
+    position: absolute;
+    z-index: 9;
+}
+
+
+@keyframes slidein{
+    from{
+        margin-top: -100%;
+        
+    }
+    to {
+        margin-top: 100%;
+    }
+}
+
+.num-inp{
+    margin-top: 82%;
+    margin-left: 30%;
+    position:absolute;
+    background-color: aqua;
+}
+.cover{
+    position: absolute;
+    width:50%;
+    height:10%;
+    background-color: yellow;
+}
