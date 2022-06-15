@@ -16,19 +16,26 @@
                     
                 </div>
                 <div class="col-lg-6 col-md-12 middle-area ">
+                    
                     <div class="cover">
 
                     </div>
                     <div class="content">
-                        
+                        <div class="popup" id="popup">
+                            <h1>Score: <p class="score" id="score"></p> </h1>
+                            <h3>High Score: <p ></p> </h3>
+                            <input type="submit" class="popup-submit" value="ok">
+                            <input type="submit" class="popup-restart" value="restart">
+                        </div>
                         <div>
-                            <div class="box-area" id="box_area">
+                            <div class="box-area" id="box_area" onchange="print()" >
                                 
                              </div>
                         </div>
-                    <form action="POST">
-                        <input class="num-inp" type="number">
-                    </form>
+                        
+                    
+                        <input class="num-inp" type="text" id="inp"  onchange="entered_num()" autofocus>
+                    
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-12 right-area">
