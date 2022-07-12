@@ -31,6 +31,7 @@ try{
 	while(rs.next()) {
 		if(password.equals(rs.getString(1))) {
 			out.print("LOgged in suceesfully");
+			response.sendRedirect("index.html");
 		}
 		else out.print("enter correct credentials");
 	}

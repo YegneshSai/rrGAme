@@ -9,6 +9,8 @@
     <title>Document</title>
 </head>
 <body onload="generate_num()">
+
+
     <section >
         <div class="container ">
             <div class="row">
@@ -18,22 +20,29 @@
                 <div class="col-lg-6 col-md-12 middle-area ">
                     
                     <div class="cover">
-
+						<h1 style="text-align: center">LEVEL 1: ADDITIONS</h1>
                     </div>
                     <div class="content">
                         <div class="popup" id="popup">
+                            <img src="pics/wrong.png" alt="" class="img">
                             <h1>Score: <p class="score" id="score"></p> </h1>
                             <h3>High Score: <p ></p> </h3>
                             <input type="submit" class="popup-submit" value="ok">
                             <input type="submit" class="popup-restart" value="restart">
+                        </div>
+                        <div class="popup" id="next_l">
+                            <img src="pics/good.png" alt="" class="img">
+                            <h1>Score: <p class="score" id="score"></p> </h1>
+                            <h3>next kdnjcnej<p ></p> </h3>
+                            <input type="submit" class="popup-submit" value="ok">
+                            <input type="submit" class="popup-restart" value="restart">
+                            <input type="button" onclick="nextL()" title="hiiiiiiiiiii" class="popup-nextLevel" value="Next Level" autofocus>
                         </div>
                         <div>
                             <div class="box-area" id="box_area" onchange="print()" >
                                 
                              </div>
                         </div>
-                        
-                    
                         <input class="num-inp" type="text" id="inp"  onchange="entered_num()" autofocus>
                     
                     </div>
@@ -45,5 +54,5 @@
         </div>
     </section>
 </body>
-<script src="main.js"></script>
+<script src="./main.js"></script>
 </html>
