@@ -31,7 +31,7 @@ body{
     border-radius: 10px;
     box-shadow: 5px 5px #ccc;
     background-color: aqua;
-    animation-duration:1s;
+    animation-duration:40s;
     animation-name:slidein;
     /*z-index: 4;*/
 }
@@ -42,7 +42,7 @@ body{
     text-align: center;
     margin-top: 5%;
     margin-left: 5%;
-    /*z-index: 999;*/
+    z-index: 999;
     width: 90%;
     height: 88%;
     border-radius: 25px;

@@ -1,14 +1,14 @@
 var list=new Array();
 var current=0;
 var score=0;
-var level=3;
+var level=0;
 //-------------Functionn to generate numbers-----------
 function generate_num(){
 	console.log("heeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeyyyyyyyyyyyyyyyyyyyyyyy");
     let i,j;
     
     let k=0;
-    while(k<1){
+    while(k<10){
         i=Math.floor(Math.random()*10);
         j=Math.floor(Math.random()*10);
 
@@ -46,7 +46,7 @@ k++;
 function level3() {
 	let k=0,i;
 
-	while(k<3){
+	while(k<10){
 		 i=Math.floor(Math.random()*10);
 		 list.push(i);
 	let box=document.createElement("p");
@@ -91,7 +91,7 @@ function wait(){
 	let box=document.createElement("p");
     let br=`<br>`;
     box.setAttribute('id',j);
-    let txt=document.createTextNode(`${list[j]}\n`);
+    let txt=document.createTextNode(`????\n`);
     box.appendChild(txt);
     box.style.marginLeft=`${Math.floor(Math.random()*(90)+0)}%`;
     box.style.zIndex=9;
@@ -117,7 +117,7 @@ function entered_num(){
         low.parentNode.removeChild(low);
         score++;
         current++;
-        if(current==1){
+        if(current==10){
 	console.log("level completed");
 			nxtl();
 		}
@@ -145,7 +145,7 @@ function lost(msg){
 
 //----------------------functon to check position of dropping elements-----------------------
 function check_pos(m){
-	if(parseInt(current)<1){
+	if(parseInt(current)<10){
     
     var p = document.getElementById(current);//last box
     var n=document.getElementById('inp');//input box
