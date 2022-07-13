@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body onload="generate_num()">
+
+
+    <section >
+        <div class="container ">
+            <div class="row">
+                <div class="col-lg-3 col-md-12 left-area">
+                    
+                </div>
+                <div class="col-lg-6 col-md-12 middle-area ">
+                    
+                    <div class="cover">
+						<h1 style="text-align: center" id='heading'>LEVEL: ADDITIONS</h1>
+                    </div>
+                    <div class="content">
+                        <div class="popup" id="popup">
+                            <img src="pics/wrong.png" alt="" class="img">
+                            <h1>Score: <p class="score" id="score"></p> </h1>
+                            <h3>High Score: <p ></p> </h3>
+                            <input type="submit" class="popup-submit" value="ok">
+                            <input type="submit" class="popup-restart" value="restart">
+                        </div>
+                        <div class="popup" id="next_l">
+                            <img src="pics/good.png" alt="" class="img">
+                            <h1>Score: <p class="score" id="score"></p> </h1>
+                            <h3>nice abbai<p ></p> </h3>
+                            <input type="submit" class="popup-submit" value="ok">
+                            <input type="submit" class="popup-restart" value="restart">
+                            <a href="https://youtube.com/">uhuh</a>
+                            <input type="button" onclick="nextL()" title="hiiiiiiiiiii" class="popup-nextLevel" value="Next Level" >
+                        </div>
+                        <div>
+                            <div class="box-area" id="box_area" onchange="print()" >
+                                
+                             </div>
+                        </div>
+                        <input class="num-inp" type="text" id="inp"  onchange="entered_num()" autofocus>
+                    
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-12 right-area">
+                    
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+<script src="./index.js"></script>
+</html>
