@@ -1,7 +1,11 @@
 var list=new Array();
 var current=0;
+sessionStorage.setItem("cur_score", 0);
 var score=0;
 var level=0;
+
+
+
 //-------------Functionn to generate numbers-----------
 function generate_num(){
 	console.log("heeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeyyyyyyyyyyyyyyyyyyyyyyy");
@@ -124,9 +128,12 @@ function entered_num(){
         
     }
     else{
+		document.getElementById('score').value=score;
+		sessionStorage.setItem("cur_score", score);
         open_card(score);
+        document.getElementById("fom").submit();
         var msg="wrong answer";
-        lost(msg);
+        //lost(msg);
     }
     document.getElementById('inp').value=null;
     

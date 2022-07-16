@@ -23,20 +23,21 @@
 						<h1 style="text-align: center" id='heading'>LEVEL: ADDITIONS</h1>
                     </div>
                     <div class="content">
-                        <div class="popup" id="popup">
-                            <img src="pics/wrong.png" alt="" class="img">
-                            <h1>Score: <p class="score" id="score"></p> </h1>
-                            <h3>High Score: <p ></p> </h3>
-                            <input type="submit" class="popup-submit" value="ok">
-                            <input type="submit" class="popup-restart" value="restart">
-                        </div>
+                        <form action="end.jsp" method="POST" id="fom">
+	                        <div class="popup" id="popup">
+	                            <img src="pics/wrong.png" alt="" class="img">
+	                            <h1>Score: <input class="score" id="score" name="score" value=0> </h1>
+	                            <h3>High Score: <p id="highscore" name="highscore"></p> </h3>
+	                            <input type="submit" class="popup-submit" value="ok">
+	                            <input type="submit" class="popup-restart" value="restart">
+	                        </div>
+                        </form>
                         <div class="popup" id="next_l">
                             <img src="pics/good.png" alt="" class="img">
-                            <h1>Score: <p class="score" id="score"></p> </h1>
+                            <h1>Score: <p class="score" id="scor"></p> </h1>
                             <h3>nice abbai<p ></p> </h3>
                             <input type="submit" class="popup-submit" value="ok">
                             <input type="submit" class="popup-restart" value="restart">
-                            <a href="https://youtube.com/">uhuh</a>
                             <input type="button" onclick="nextL()" title="hiiiiiiiiiii" class="popup-nextLevel" value="Next Level" >
                         </div>
                         <div>
